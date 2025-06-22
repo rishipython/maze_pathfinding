@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maze Pathfinding</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="controls">
+        <button onclick="generateMaze()">Generate New Maze</button>
+        <select id="algorithm">
+            <option value="bfs">Breadth-First Search</option>
+            <option value="dfs">Depth-First Search</option>
+        </select>
+        <button onclick="solveMaze()">Solve Maze</button>
+    </div>
+    <canvas id="mazeCanvas"></canvas>
+    <script src="{{ url_for('static', filename='maze.js') }}"></script>
+</body>
+</html>
